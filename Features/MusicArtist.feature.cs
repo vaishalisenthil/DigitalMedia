@@ -35,7 +35,7 @@ namespace DigitalMedia.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Music Artist", "Music Artist song playing now", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Music Artist", "Music Artist song playing now or played recently", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -76,9 +76,7 @@ namespace DigitalMedia.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Artist music album is playing now or in recently played")]
         [NUnit.Framework.CategoryAttribute("MusicArtist")]
-        [NUnit.Framework.TestCaseAttribute("Lizzo", null)]
-        [NUnit.Framework.TestCaseAttribute("Lewis Capaldi", null)]
-        [NUnit.Framework.TestCaseAttribute("aaaaaa", null)]
+        [NUnit.Framework.TestCaseAttribute("Justin Bieber", null)]
         public virtual void ArtistMusicAlbumIsPlayingNowOrInRecentlyPlayed(string artist, string[] exampleTags)
         {
             string[] @__tags = new string[] {

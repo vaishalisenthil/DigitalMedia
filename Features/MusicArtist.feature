@@ -1,6 +1,6 @@
 ﻿Feature: Music Artist
 
-Music Artist song playing now
+Music Artist song playing now or played recently
 
 @MusicArtist
 Scenario Outline: Artist music album is playing now or in recently played
@@ -10,6 +10,4 @@ Scenario Outline: Artist music album is playing now or in recently played
 		
 Examples:
 	| Artist        |
-	| Lizzo         |
-	| Lewis Capaldi |
-	| aaaaaa        |
+	| Justin Bieber |
